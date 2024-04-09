@@ -5,6 +5,11 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKKDotNetCore.ConsoleApp", "AKKDotNetCore.ConsoleApp\AKKDotNetCore.ConsoleApp.csproj", "{2E8EE719-8E79-4E8C-88F7-06326F9ECDAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{9A066EE8-0240-425C-A26E-10C574A50D10}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
