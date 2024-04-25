@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AKKDotNetCore.ConsoleApp
+namespace AKKDotNetCore.ConsoleApp.AdoDotNetExamples
 {
     internal class AdoDotNetExample
     {
@@ -18,7 +18,8 @@ namespace AKKDotNetCore.ConsoleApp
             UserID = "sa",
             Password = "sasa@123"
         };
-        public void Read() {
+        public void Read()
+        {
             SqlConnection connection = new SqlConnection(_sqlConnectionStringBuilder.ConnectionString);
 
             connection.Open();
@@ -58,7 +59,7 @@ namespace AKKDotNetCore.ConsoleApp
 
             connection.Close();
 
-            if(dt.Rows.Count == 0)
+            if (dt.Rows.Count == 0)
             {
                 Console.WriteLine("Data Not Found");
                 return;
@@ -71,16 +72,16 @@ namespace AKKDotNetCore.ConsoleApp
             Console.WriteLine("Blgo Author => " + dr["BlogAuthor"]);
             Console.WriteLine("Blgo Content => " + dr["BlogContent"]);
             Console.WriteLine("____________________________________");
-            
+
         }
 
-        public void Create(String title, String author, String content)
+        public void Create(string title, string author, string content)
         {
             SqlConnection connection = new SqlConnection(_sqlConnectionStringBuilder.ConnectionString);
 
             connection.Open();
 
-            String query = @"INSERT INTO [dbo].[Tbl_Blog]
+            string query = @"INSERT INTO [dbo].[Tbl_Blog]
                 ([BlogTitle]
                 ,[BlogAuthor]
                 ,[BlogContent])
@@ -96,15 +97,16 @@ namespace AKKDotNetCore.ConsoleApp
 
             connection.Close();
 
-            String message = result > 0 ? "Saving Successful." : "Saving Failed.";
+            string message = result > 0 ? "Saving Successful." : "Saving Failed.";
             Console.WriteLine(message);
         }
 
-        public void Update(int id, String title, String author, String content) {
+        public void Update(int id, string title, string author, string content)
+        {
             SqlConnection connection = new SqlConnection(_sqlConnectionStringBuilder.ConnectionString);
 
             connection.Open();
-            String query = @"UPDATE [dbo].[Tbl_Blog]
+            string query = @"UPDATE [dbo].[Tbl_Blog]
                 SET [BlogTitle] = @BlogTitle
                 ,[BlogAuthor] = @BlogAuthor
                 ,[BlogContent] = @BlogContent
@@ -118,22 +120,22 @@ namespace AKKDotNetCore.ConsoleApp
             int result = cmd.ExecuteNonQuery();
 
             connection.Close();
-            String message = result > 0 ? "Update Successful." : "Update Failed.";
+            string message = result > 0 ? "Update Successful." : "Update Failed.";
             Console.WriteLine(message);
         }
 
         public void Delete(int id)
         {
-            SqlConnection connection = new SqlConnection( _sqlConnectionStringBuilder.ConnectionString);
+            SqlConnection connection = new SqlConnection(_sqlConnectionStringBuilder.ConnectionString);
             connection.Open();
 
-            String query = @"DELETE FROM [dbo].[Tbl_Blog]
+            string query = @"DELETE FROM [dbo].[Tbl_Blog]
                 WHERE BlogId = @BlogId";
             SqlCommand cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@BlogId", id);
             int result = cmd.ExecuteNonQuery();
             connection.Close();
-            String message = result > 0 ? "Delete Successful." : "Delete Failed.";
+            string message = result > 0 ? "Delete Successful." : "Delete Failed.";
             Console.WriteLine(message);
         }
     }

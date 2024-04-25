@@ -1,4 +1,6 @@
-﻿using Dapper;
+﻿using AKKDotNetCore.ConsoleApp.Dtos;
+using AKKDotNetCore.ConsoleApp.Services;
+using Dapper;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +10,7 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AKKDotNetCore.ConsoleApp
+namespace AKKDotNetCore.ConsoleApp.DapperExamples
 {
     internal class DapperExample
     {
@@ -60,7 +62,7 @@ namespace AKKDotNetCore.ConsoleApp
                 BlogAuthor = author,
                 BlogContent = content
             };
-            String query = @"INSERT INTO [dbo].[Tbl_Blog]
+            string query = @"INSERT INTO [dbo].[Tbl_Blog]
                 ([BlogTitle]
                 ,[BlogAuthor]
                 ,[BlogContent])
@@ -71,7 +73,7 @@ namespace AKKDotNetCore.ConsoleApp
             using IDbConnection db = new SqlConnection(ConnectionStrings.SqlConnectionStringBuilder.ConnectionString);
             int result = db.Execute(query, item);
 
-            String message = result > 0 ? "Saving Successful." : "Saving Failed.";
+            string message = result > 0 ? "Saving Successful." : "Saving Failed.";
             Console.WriteLine(message);
         }
 
@@ -84,7 +86,7 @@ namespace AKKDotNetCore.ConsoleApp
                 BlogAuthor = author,
                 BlogContent = content
             };
-            String query = @"UPDATE [dbo].[Tbl_Blog]
+            string query = @"UPDATE [dbo].[Tbl_Blog]
                 SET [BlogTitle] = @BlogTitle
                 ,[BlogAuthor] = @BlogAuthor
                 ,[BlogContent] = @BlogContent
@@ -92,7 +94,7 @@ namespace AKKDotNetCore.ConsoleApp
             using IDbConnection db = new SqlConnection(ConnectionStrings.SqlConnectionStringBuilder.ConnectionString);
             int result = db.Execute(query, item);
 
-            String message = result > 0 ? "Updating Successful." : "Updating Failed.";
+            string message = result > 0 ? "Updating Successful." : "Updating Failed.";
             Console.WriteLine(message);
         }
 
@@ -102,12 +104,12 @@ namespace AKKDotNetCore.ConsoleApp
             {
                 BlogId = id
             };
-            String query = @"DELETE FROM [dbo].[Tbl_Blog]
+            string query = @"DELETE FROM [dbo].[Tbl_Blog]
                 WHERE BlogId = @BlogId";
             using IDbConnection db = new SqlConnection(ConnectionStrings.SqlConnectionStringBuilder.ConnectionString);
             int result = db.Execute(query, item);
 
-            String message = result > 0 ? "Delete Successful." : "Delete Failed.";
+            string message = result > 0 ? "Delete Successful." : "Delete Failed.";
             Console.WriteLine(message);
         }
     }

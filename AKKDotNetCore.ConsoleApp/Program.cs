@@ -1,4 +1,4 @@
-﻿using AKKDotNetCore.ConsoleApp;
+﻿using AKKDotNetCore.ConsoleApp.EFCoreExamples;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -12,7 +12,10 @@ Console.WriteLine("Hello, World!");
 // adoDotNetExample.Edit(13);
 // adoDotNetExample.Edit(12);
 
-DapperExample dapperExample = new DapperExample();
-dapperExample.Run();
+//DapperExample dapperExample = new DapperExample();
+//dapperExample.Run();
+
+EFCoreExample eFCoreExample = new EFCoreExample();
+eFCoreExample.Run();
 
 Console.ReadKey();
