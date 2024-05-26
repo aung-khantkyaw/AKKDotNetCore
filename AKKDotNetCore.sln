@@ -24,7 +24,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKKDotNetCore.ConsoleAppRes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKKDotNetCore.ConsoleAppRefitExample", "AKKDotNetCore.ConsoleAppRefitExample\AKKDotNetCore.ConsoleAppRefitExample.csproj", "{237E3573-2CA1-4074-8BC8-888CB2EA44F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKKDotNetCore.WinFormsApp", "AKKDotNetCore.WinFormsApp\AKKDotNetCore.WinFormsApp.csproj", "{BCD3A068-A25B-4F57-820E-72E5580F914D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKKDotNetCore.WinFormsApp", "AKKDotNetCore.WinFormsApp\AKKDotNetCore.WinFormsApp.csproj", "{BCD3A068-A25B-4F57-820E-72E5580F914D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKKDotNetCore.PizzaApi", "AKKDotNetCore.PizzaApi\AKKDotNetCore.PizzaApi.csproj", "{463D242F-0B4C-4CAD-B400-861F3CB04CD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +70,10 @@ Global
 		{BCD3A068-A25B-4F57-820E-72E5580F914D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCD3A068-A25B-4F57-820E-72E5580F914D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCD3A068-A25B-4F57-820E-72E5580F914D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{463D242F-0B4C-4CAD-B400-861F3CB04CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{463D242F-0B4C-4CAD-B400-861F3CB04CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{463D242F-0B4C-4CAD-B400-861F3CB04CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{463D242F-0B4C-4CAD-B400-861F3CB04CD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
