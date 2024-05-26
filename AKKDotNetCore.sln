@@ -20,9 +20,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKKDotNetCore.ConsoleAppHtt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKKDotNetCore.ConsoleAppHttpClientExample", "AKKDotNetCore.ConsoleAppHttpClientExample\AKKDotNetCore.ConsoleAppHttpClientExample.csproj", "{13EB2E51-5FEA-4B1E-BB09-F6D6F48FF060}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKKDotNetCore.ConsoleAppRestClientExample", "AKKDotNetCore.ConsoleAppRestClientExample\AKKDotNetCore.ConsoleAppRestClientExample.csproj", "{E09502DE-F41B-41FC-B171-19DA2057B9F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKKDotNetCore.ConsoleAppRestClientExample", "AKKDotNetCore.ConsoleAppRestClientExample\AKKDotNetCore.ConsoleAppRestClientExample.csproj", "{E09502DE-F41B-41FC-B171-19DA2057B9F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKKDotNetCore.ConsoleAppRefitExample", "AKKDotNetCore.ConsoleAppRefitExample\AKKDotNetCore.ConsoleAppRefitExample.csproj", "{237E3573-2CA1-4074-8BC8-888CB2EA44F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AKKDotNetCore.ConsoleAppRefitExample", "AKKDotNetCore.ConsoleAppRefitExample\AKKDotNetCore.ConsoleAppRefitExample.csproj", "{237E3573-2CA1-4074-8BC8-888CB2EA44F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKKDotNetCore.WinFormsApp", "AKKDotNetCore.WinFormsApp\AKKDotNetCore.WinFormsApp.csproj", "{BCD3A068-A25B-4F57-820E-72E5580F914D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +64,10 @@ Global
 		{237E3573-2CA1-4074-8BC8-888CB2EA44F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{237E3573-2CA1-4074-8BC8-888CB2EA44F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{237E3573-2CA1-4074-8BC8-888CB2EA44F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCD3A068-A25B-4F57-820E-72E5580F914D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCD3A068-A25B-4F57-820E-72E5580F914D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCD3A068-A25B-4F57-820E-72E5580F914D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCD3A068-A25B-4F57-820E-72E5580F914D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
