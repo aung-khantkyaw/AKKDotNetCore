@@ -1,6 +1,6 @@
 ﻿namespace AKKDotNetCore.WinFormsApp
 {
-    partial class Form1
+    partial class FrmBlog
     {
         /// <summary>
         ///  Required designer variable.
@@ -115,7 +115,7 @@
             btnCancle.UseVisualStyleBackColor = false;
             btnCancle.Click += btnCancle_Click;
             // 
-            // Form1
+            // FrmBlog
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -128,9 +128,10 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "FrmBlog";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += FrmBlog_Load;
             ResumeLayout(false);
             PerformLayout();
         }

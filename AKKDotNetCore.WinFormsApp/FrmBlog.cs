@@ -4,10 +4,10 @@ using AKKDotNetCore.WinFormsApp.Queries;
 
 namespace AKKDotNetCore.WinFormsApp
 {
-    public partial class Form1 : Form
+    public partial class FrmBlog : Form
     {
         private readonly DapperService _dapperService;
-        public Form1()
+        public FrmBlog()
         {
             InitializeComponent();
             _dapperService = new DapperService(ConnectionStrings.sqlConnectionStringBuilder.ConnectionString);
@@ -29,7 +29,7 @@ namespace AKKDotNetCore.WinFormsApp
 
                 if (result > 0)
                     ClearControls();
-            } 
+            }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
@@ -48,6 +48,11 @@ namespace AKKDotNetCore.WinFormsApp
             txtContent.Clear();
 
             txtTitle.Focus();
+        }
+
+        private void FrmBlog_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
